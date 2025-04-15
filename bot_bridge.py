@@ -1,9 +1,11 @@
 import time
 import requests
+import os
+
 
 # 🔐 Токени
-TG_TOKEN = "7729914687:AAGIiJ18cIFfd2xLD6ChWNsRKXm2RbczKjQ"
-DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1361725683906117822/8KuTSIFRohQxPCixgKZRBiD-oCP547ZTwryfjLC0EaU3JEgbU4AgGcpdK9_W2KhLsN8-"
+TG_TOKEN = os.getenv("7729914687:AAGIiJ18cIFfd2xLD6ChWNsRKXm2RbczKjQ")
+DISCORD_WEBHOOK = os.getenv("https://discord.com/api/webhooks/1361725683906117822/8KuTSIFRohQxPCixgKZRBiD-oCP547ZTwryfjLC0EaU3JEgbU4AgGcpdK9_W2KhLsN8-")
 
 # 📍 Chat ID твоєї групи (замінити після запуску)
 CHAT_ID = -1000000000000  # тимчасово, зараз скрипт його визначить
